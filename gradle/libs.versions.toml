@@ -1,6 +1,6 @@
 [versions]
 agp = "8.6.1"
-kotlin = "1.9.0"
+kotlin = "1.9.21"
 ksp = "1.9.21-1.0.15"
 
 coil = "3.0.0-rc01"
@@ -23,6 +23,8 @@ okhttpBom = "4.12.0"
 preferenceKtx = "1.2.1"
 retrofit = "2.11.0"
 roomRuntime = "2.6.1"
+hiltGradlePlugin = "2.51.1"
+hiltAndroid = "2.51.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -50,10 +52,15 @@ converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref
 converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltAndroid" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltAndroid" }
+
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+hilt-android-gradle-plugin = { id = "com.google.dagger.hilt.android", version.ref = "hiltGradlePlugin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
