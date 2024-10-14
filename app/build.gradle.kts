@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.hilt.android.gradle.plugin)
+    alias(libs.plugins.safe.args.gradle.plugin)
     alias(libs.plugins.ksp)
 }
 

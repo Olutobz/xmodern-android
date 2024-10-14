@@ -24,6 +24,7 @@ activity = "1.9.2"
 constraintlayout = "2.1.4"
 moshiKotlin = "1.14.0"
 navigationFragmentKtx = "2.8.2"
+navigationSafeArgs = "2.5.1"
 okhttpBom = "4.12.0"
 preferenceKtx = "1.2.1"
 retrofit = "2.11.0"
@@ -74,4 +75,5 @@ coroutine-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-t
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 hilt-android-gradle-plugin = { id = "com.google.dagger.hilt.android", version.ref = "hiltGradlePlugin" }
+safe-args-gradle-plugin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigationSafeArgs" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
