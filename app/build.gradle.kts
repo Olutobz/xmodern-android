@@ -82,6 +82,12 @@ dependencies {
     ksp(libs.hilt.compiler)
 
     testImplementation(libs.junit)
+    testImplementation(libs.truth)
+    testImplementation(libs.mock)
+    testImplementation(libs.coroutine.test)
     androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.truth)
+    androidTestImplementation(libs.android.mockk)
     androidTestImplementation(libs.androidx.espresso.core)
 }
